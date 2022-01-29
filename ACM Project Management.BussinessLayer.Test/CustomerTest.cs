@@ -63,5 +63,26 @@ namespace ACM_Project_Management.BussinessLayer.Test
             //Assert
             Assert.AreEqual(expectedResult, fullName);
         }
+
+        [TestMethod]
+        public void StaticPropertyTest()
+        {
+            //Arrange
+            var c1 = new Customer();
+            c1.FirstName = "First";
+            Customer.InstanceCount ++;
+
+            var c2 = new Customer();
+            c2.FirstName = "Second";
+            Customer.InstanceCount++;
+
+            var c3 = new Customer();
+            c3.FirstName = "Third";
+            Customer.InstanceCount++;
+
+
+            //Act && Assert
+            Assert.AreEqual(3, Customer.InstanceCount);
+        }
     }
 }

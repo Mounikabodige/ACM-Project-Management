@@ -11,5 +11,7 @@
         public string LastName { get; set; }
 
         public string Address { get; set; }
+
+        public static int InstanceCount { get; set; }
     }
 }
