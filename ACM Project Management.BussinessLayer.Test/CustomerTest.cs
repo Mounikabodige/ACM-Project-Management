@@ -84,5 +84,22 @@ namespace ACM_Project_Management.BussinessLayer.Test
             //Act && Assert
             Assert.AreEqual(3, Customer.InstanceCount);
         }
+
+        [TestMethod]
+        public void ValidateCustomer()
+        {
+            var customer = new Customer()
+            {
+                LastName = "Test",
+                Email = "test@gmail.com"
+            };
+
+            //Act
+            var service = new CustomerService();
+            var result = service.Validate(customer.LastName);
+
+            //Assert
+            Assert.IsFalse(result);
+        }
     }
 }

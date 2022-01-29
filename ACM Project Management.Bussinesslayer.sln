@@ -9,6 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0EF10C1F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM Project Management.BussinessLayer.Test", "ACM Project Management.BussinessLayer.Test\ACM Project Management.BussinessLayer.Test.csproj", "{0D0DA7B6-3767-4A6A-BF99-2D9F301079ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Technical terms", "Technical terms", "{C4705B3B-9740-43C3-A208-A0C8AA5ACD3B}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

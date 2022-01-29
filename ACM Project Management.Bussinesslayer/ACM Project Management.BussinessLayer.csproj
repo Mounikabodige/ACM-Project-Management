@@ -50,8 +50,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BussinessLogicServices\OrderItemService.cs" />
+    <Compile Include="BussinessLogicServices\OrderService.cs" />
+    <Compile Include="BussinessLogicServices\ProductService.cs" />
     <Compile Include="BussinessLogicServices\CustomerService.cs" />
+    <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\OrderItem.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
